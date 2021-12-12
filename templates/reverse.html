@@ -4,4 +4,7 @@
 
 <h1>Reversed Text</h1>
 
-{{reversedtext}}
+<form action="{% url 'reverse' %}">
+	<textarea style= "border-radius: 15px 15px 15px 2px;" id= "msg" cols= "50" rows="10" name="usertext" placeholder="{{reversedtext}}"> {{reversedtext}} </textarea>
+	<br><br>
+ <input style="border-radius: 2px 8px 8px 8px; ; padding: 10px" type="submit" value="Reverse!">
